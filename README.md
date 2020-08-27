@@ -31,6 +31,12 @@ In the project's root directory, run the following commands:
 
 2. Go to http://0.0.0.0:3001/
 
+## Warnings
+The dataset is highly imbalanced.
+
+## Acknowledgements
+The project was done to satisfy the Data Science Nanodegree. It uses data from Figure Eight 
+
 ## Licence
 
 MIT License
@@ -54,7 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Acknowledgements
-The project was done to satisfy the Data Science Nanodegree. It uses data from Figure Eight 
-
