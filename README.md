@@ -6,15 +6,15 @@ This repository contains a disaster response app. The app is design to be used d
 
 ## File Descriptions
 
--**disaster_messages.csv**: Contains text data from social media posts regarding disasters.
+- **disaster_messages.csv**: Contains text data from social media posts regarding disasters.
 
--**disaster_categories.csv**: Contains the labels for the text data in disaster_messages.csv
+- **disaster_categories.csv**: Contains the labels for the text data in disaster_messages.csv
 
--**process_data.py**: This code cleans and merges (on = 'id') disaster_categories.csv and disaster_messages.csv files. The result is stored in a SQLite database **DisasterResponse.db**
+- **process_data.py**: This code cleans and merges (on = 'id') disaster_categories.csv and disaster_messages.csv files. The result is stored in a SQLite database **DisasterResponse.db**
       
--**train_classifier.py**: Contains a Random Forest model to be trained on the data in **DisasterResponse.db**. It outputs a pickled file **classifier.pkl** of the fiited model
+- **train_classifier.py**: Contains a Random Forest model to be trained on the data in **DisasterResponse.db**. It outputs a pickled file **classifier.pkl** of the fiited model
 
--**app**: This folder contains the files needed to render the web app.
+- **app**: This folder contains the files needed to render the web app.
 
 
 ## Installation
