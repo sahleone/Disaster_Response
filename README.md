@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This repository contains a disaster response app. The app is design to be used during a disaster. It classify text data from social meadia posts, flags it and directs it to the correct emergency response agency.
+This repository contains a disaster response app. The app is designed to be used during a disaster. It classifies text data from social media posts, flags it, and directs it to the correct emergency response agency.
 
 ## File Descriptions
 
@@ -12,7 +12,7 @@ This repository contains a disaster response app. The app is design to be used d
 
 - **process_data.py**: This code cleans and merges (on = 'id') disaster_categories.csv and disaster_messages.csv files. The result is stored in a SQLite database **DisasterResponse.db**
       
-- **train_classifier.py**: Contains a Random Forest model to be trained on the data in **DisasterResponse.db**. It outputs a pickled file **classifier.pkl** of the fiited model
+- **train_classifier.py**: Contains a Random Forest model to be trained on the data in **DisasterResponse.db**. It outputs a pickled file **classifier.pkl** of the fitted model
 
 - **app**: This folder contains the files needed to render the web app.
 
@@ -34,8 +34,8 @@ In the project's root directory, run the following commands:
 ## Warnings
 The dataset is highly imbalanced.
 
-## Acknowledgements
-The project was done to satisfy the Data Science Nanodegree. It uses data from Figure Eight 
+## Acknowledgments
+The project was done to satisfy the Data Science Nanodegree. It uses data from Figure Eight.
 
 ## Licence
 
