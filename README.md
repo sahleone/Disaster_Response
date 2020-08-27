@@ -8,3 +8,13 @@ This repository contains a disaster response app. The app is design to be used d
 
 
 ## Installation
+
+## Warnings
+
+## Lisence
+
+## Acknowledgements
+
+
+# To do
+Maybe inclde etl and ml notebbooks?
