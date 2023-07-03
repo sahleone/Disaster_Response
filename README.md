@@ -1,22 +1,22 @@
-# Disaster_Response
+
+# Data Science - Disaster Response Message Classification
+This project is part of the Data Science course offered by Udacity. The goal of the project is to analyze disaster data and build a model that can classify disaster messages. The project consists of three main components: ETL Pipeline, ML Pipeline, and Flask Web App.
 
 ## Project Overview
+In this project, data engineering skills to analyze disaster data obtained from Figure Eight. The objective is to build a model for an API that can classify disaster messages. The project includes the development of a web app where an emergency worker can input a new message and receive classification results in multiple categories. The web app also provides data visualizations.
 
-This repository contains a disaster response app. The app is designed to be used during a disaster. It classifies text data from social media posts, flags it, and directs it to the correct emergency response agency.
+## Screenshots of the Web app
+![](Disaster_Response_Screenshot1.png)
+![](Disaster_Response_Screenshot2.png)
 
-## File Descriptions
+## Project Components
+The project is divided into three components:
 
-- **disaster_messages.csv**: Contains text data from social media posts regarding disasters.
+1. ETL Pipeline: A Python script, process_data.py, that performs the Extract, Transform, and Load process. It loads and merges the messages and categories datasets, cleans the data, and stores it in a SQLite database.
 
-- **disaster_categories.csv**: Contains the labels for the text data in disaster_messages.csv
+2. ML Pipeline: A Python script, train_classifier.py, that builds a machine learning pipeline. It loads data from the SQLite database, splits the dataset into training and test sets, builds a text processing and machine learning pipeline using NLTK and scikit-learn, trains and tunes a model using GridSearchCV, and exports the final model as a pickle file.
 
-- **process_data.py**: This code cleans and merges (on = 'id') disaster_categories.csv and disaster_messages.csv files. The result is stored in a SQLite database **DisasterResponse.db**
-      
-- **train_classifier.py**: Contains a Random Forest model to be trained on the data in **DisasterResponse.db**. It outputs a pickled file **classifier.pkl** of the fitted model
-
-- **app**: This folder contains the files needed to render the web app.
-
-
+3. Flask Web App: A web app that allows an emergency worker to input a message and receive classification results. It also displays data visualizations based on the data extracted from the SQLite database.
 ## Installation
 In the project's root directory, run the following commands:
 
@@ -30,9 +30,6 @@ In the project's root directory, run the following commands:
     `python run.py`
 
 2. Go to http://0.0.0.0:3001/
-
-## Warnings
-The dataset is highly imbalanced.
 
 ## Acknowledgments
 The project was done to satisfy the Data Science Nanodegree. It uses data from Figure Eight.
@@ -61,6 +58,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-## Screenshots of the Web app
-![](Disaster_Response_Screenshot1.png)
-![](Disaster_Response_Screenshot2.png)
+
